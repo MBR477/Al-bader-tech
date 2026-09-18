@@ -4,13 +4,7 @@
 
 ### 💻 IT Student | 🌐 Web Developer | 🐧 Linux Enthusiast
 
-<img src="https://github-profile-trophy.vercel.app/?username=MBR477&theme=tokyonight&no-frame=true&row=1&column=6" />
 
-<br>
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=MBR477&theme=tokyo-night&hide_border=true" width="95%"/>
-
-<br>
 
 ### ⚡ Technologies & Interests
 
