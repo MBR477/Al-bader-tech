@@ -1,0 +1,336 @@
+/* ضبط جسم الصفحة ليعمل بنظام Flexbox عمودي، لضمان ملء الشاشة بالكامل */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* تمديد المحتوى الرئيسي تلقائياً لدفع الفوتر للأسفل حتى لو كانت الصفحة فارغة */
+main {
+  flex: 1;
+}
+
+/* تأثير التمرير (Hover) على روابط القائمة العلوية لتغيير لون الخلفية والنص */
+.nav-link:hover {
+  background-color: #e3f2fd !important;
+  color: #0d6efd !important;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+/* ===================================================
+   2. قسم الأقسام الرئيسية والبطاقات (الصفحة الرئيسية)
+   =================================================== */
+
+/* عنوان قسم الأقسام لتوسيطه وتحديد حجمه ولونه */
+.categories-title {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  color: #222;
+}
+
+/* شبكة توزيع بطاقات الأقسام لتكون متجاوبة تلقائياً مع حجم الشاشة */
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* بطاقة القسم لتحديد الخلفية، الحواف الدائرية، والمسافات الداخلية */
+.category-card {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+/* تأثير التمرير لبطاقة القسم لرفعها للأعلى وإظهار ظل خفيف وإطار أزرق */
+.category-card:hover {
+  border-color: #0d6efd;
+  box-shadow: 0 5px 15px rgba(13, 110, 253, 0.15);
+  transform: translateY(-5px);
+}
+
+/* ضبط مقاسات صورة القسم وتغطية المساحة العلوية للبطاقة بشكل متناسق */
+.category-card .category-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* ===================================================
+   3. قسم المنتجات وبطاقات الأجهزة
+   =================================================== */
+
+/* مسافة سفلية تفصل كتلة المنتجات عن العناصر التي تليها */
+.section-box {
+  margin-bottom: 2.5rem;
+}
+
+/* عنوان فرعي للأقسام مع خط أزرق مميز تحته */
+.section-title {
+  border-bottom: 2px solid #0d6efd;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+  color: #0d6efd;
+  font-size: 1.25rem;
+}
+
+/* بطاقة المنتج الأساسية لتنسيق الإطار والمحاذاة الرأسية للمحتوى */
+.product-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 11px;
+  text-align: center;
+  background-color: #fff;
+  display: flex; /** توحيد احجام الكروت في المنتصف */
+  flex-direction: column;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+/* حركة رفع وإبراز بطاقة المنتج مع ظل وتلوين الإطار عند مرور الفأرة */
+.product-card:hover {
+  border-color: #0d6efd;
+  box-shadow: 0 5px 15px rgba(13, 110, 253, 0.15);
+  transform: translatey(-5px);
+}
+
+/* ضبط حجم واحتواء صورة المنتج داخل الكرت بدون تشويه أبعادها */
+.product-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+/* تحديد حجم ومسافة اسم المنتج داخل البطاقة */
+.product-name {
+  font-size: 0.95rem;
+  margin-bottom: px;
+}
+
+/* إبراز سعر المنتج باللون الأخضر والخط العريض */
+.product-price {
+  font-weight: bold;
+  color: #198754;
+  margin-bottom: 12px;
+}
+
+/* الأساس المشترك لجميع الأزرار داخل بطاقة المنتج */
+.btn-custom {
+  display: block;
+  width: 100%;
+  padding: 6px 0;
+  font-size: 0.85rem;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  margin-bottom: 6px;
+  cursor: pointer;
+}
+
+/* زر التفاصيل بإطار ولون أزرق مع خلفية شفافة */
+.btn-details {
+  background-color: transparent;
+  border: 1px solid #0d6efd;
+  color: #0d6efd;
+}
+
+/* تعبئة زر التفاصيل باللون الأزرق والنص الأبيض عند مرور الفأرة */
+.btn-details:hover {
+  background-color: #0d6efd;
+  color: #fff;
+}
+
+/* زر الطلب/الشراء باللون الأخضر البارز */
+.btn-order {
+  background-color: #198754;
+  border: 1px solid #198754;
+  color: #fff;
+}
+
+/* تغميق اللون الأخضر لزر الطلب عند مرور الفأرة لإظهار التفاعل */
+.btn-order:hover {
+  background-color: #157347;
+}
+
+/* ===================================================
+   4. بطاقات ونماذج تسجيل الدخول والتواصل
+   =================================================== */
+
+/* تباعد رأسي وأفقي لعزل نموذج تسجيل الدخول عن الهيدر والفوتر */
+.login-wrapper {
+  padding: 40px 15px;
+}
+
+/* بطاقة نموذج تسجيل الدخول بتصميم أبيض وظل ناعم وحواف دائرية بارزة */
+.login-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 30px !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  padding: 30px;
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+/* بطاقة إنشاء الحساب وتوثيق المستخدم بمساحة أوسع قليلاً */
+.auth-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 30px !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  padding: 36px;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+/* صندوق نموذج التواصل بمساحة عرض أكبر لاحتواء الحقول الطويلة */
+.contact-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 750px !important;
+  margin: 15px;
+}
+
+/* تحديد أبعاد الصندوق الدائري لأيقونة المستخدم العلوية */
+.user-icon-box {
+  width: 50px;
+  height: 50px;
+}
+
+/* إضافة خط تحت رابط نسيت كلمة المرور عند مرور الفأرة */
+.forgot-link:hover {
+  text-decoration: underline !important;
+}
+
+/* ضبط اتجاه الكتابة لحقول الإدخال لتكون محاذاتها لليمين (للغة العربية) */
+.form-control {
+  text-align: right;
+}
+
+/* ===================================================
+   5. تذييل الصفحة (Footer)
+   =================================================== */
+
+/* الحاوية الأساسية للفوتر باللون الداكن مع تحديد المسافات وحجم الخط */
+.site-footer {
+  background: #212529;
+  color: #adb5bd;
+  padding: 40px 0 20px; /*اعلى و جوانب و اسفل */
+  margin-top: 50px;
+  font-size: 14px;
+}
+
+/* تلوين العناوين الجانبية وأيقونات التواصل داخل الفوتر باللون الأزرق */
+.footer-title,
+.footer-subtitle,
+.footer-contact i {
+  color: #0d6efd;
+  font-weight: bold;
+}
+
+/* مسافة سفلية تفصل عنوان الفوتر الرئيسي عن الوصف الذي تحته */
+.footer-title {
+  margin-bottom: 12px;
+}
+
+/* تنظيف القوائم في الفوتر وإلغاء النقاط السوداء وهوامش المتصفح التلقائية */
+.footer-list,
+.footer-contact {
+  list-style: none; /* ازالة النقاط السوداء */
+  padding: 0;
+  margin: 0;
+}
+
+/* مسافة رأسية تفصل بين روابط وعناصر القوائم */
+.footer-list li,
+.footer-contact li {
+  margin-bottom: 8px;
+}
+
+/* ضبط لون خط الروابط في الفوتر وإلغاء الخط التحتي */
+.footer-list a {
+  color: #adb5bd;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+/* تحويل لون الرابط في الفوتر للأزرق عند التمرير عليه */
+.footer-list a:hover {
+  color: #0d6efd;
+}
+
+/* ترتيب أيقونات التواصل الاجتماعي بجانب بعضها بمسافات متساوية */
+.social-links {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+/* تشكيل أزرار التواصل كدوائر وتوسيط الأيقونات داخلها */
+.social-links a {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  color: #ffffff;
+  display: flex;
+  align-items: center; /* توسيط راسي */
+  justify-content: center; /* افقي */
+  text-decoration: none; /* لازالة الخط السفلي */
+  transition: 0.3s;
+}
+
+/* ألوان المنصات الرسمية: فيسبوك، إكس، إنستغرام، وواتساب */
+.social-links a.fb {
+  background: #1877f2;
+}
+.social-links a.tw {
+  background: #000;
+  border: 1px solid #444;
+}
+.social-links a.ig {
+  background: #e4405f;
+}
+.social-links a.wa {
+  background: #25d366;
+}
+
+/* رفع أيقونة التواصل قليلاً للأعلى وزيادة سطوعها عند مرور الفأرة */
+.social-links a:hover {
+  transform: translateY(-4px);
+  filter: brightness(1.2); /* زيادة الاضائة 20%  */
+}
+
+/* خط فاصل علوي وتوسيط نص حقوق النشر أسفل الفوتر */
+.footer-bottom {
+  border-top: 1px solid #343a40;
+  margin-top: 30px;
+  padding-top: 15px;
+  text-align: center;
+}
+
+/* ===================================================
+   6. إشعارات التنبيه (Toastr Notifications)
+   =================================================== */
+
+/* تخصيص إشعار النجاح بخلفية خضراء واضحة، نص أبيض، وحواف ناعمة مع ظل */
+#toast-container > .toast-success {
+  background-color: #78ac73 !important;
+  color: #ffffff !important;
+  opacity: 1 !important;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+}

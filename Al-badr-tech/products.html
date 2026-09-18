@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>الرئيسية - البدر تك</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/toastr.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  
+    <header class="navbar navbar-expand-md bg-white border-bottom shadow-sm px-4 sticky-top z-3">
+      <div class="container-fluid">
+        <!-- الشعار -->
+        <a class="navbar-brand ms-3" href="index.html">
+          <img src="images/logo/logo.png" alt="AL-BADR TECH" height="40" />
+        </a>
+
+        <!-- زر الجوال (Hamburger Menu) -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- شريط الملاحة والقائمة -->
+        <nav class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav gap-2 ms-auto">
+            <!-- الرئيسية -->
+            <li class="nav-item">
+              <a class="nav-link rounded-3 px-3 text-dark fw-medium" href="index.html">
+               <i class="fa fa-home me-1"></i> الرئيسية </a>
+            </li>
+
+            <!-- المنتجات والأجهزة -->
+            <li class="nav-item">
+              <a class="nav-link active bg-primary-subtle text-primary rounded-3 px-3 fw-bold" href="products.html">
+                 <i class="fa fa-laptop me-1"></i> المنتجات والأجهزة </a>
+            </li>
+
+            <!-- تسجيل الدخول -->
+            <li class="nav-item">
+              <a class="nav-link rounded-3 px-3 text-dark fw-medium" href="login.html">
+                 <i class="fa fa-sign-in me-1"></i> تسجيل الدخول </a>
+            </li>
+
+            <!-- إنشاء حساب -->
+            <li class="nav-item">
+              <a class="nav-link rounded-3 px-3 text-dark fw-medium" href="register.html">
+                 <i class="fa fa-user-plus me-1"></i> إنشاء حساب </a>
+            </li>
+
+            <!-- اتصل بنا -->
+            <li class="nav-item">
+              <a class="nav-link rounded-3 px-3 text-dark fw-medium" href="contact.html">
+                <i class="fa fa-phone me-1"></i>اتصل بنا</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!--! توسيط محتويات الصفحة     -->
+    <main class="container my-4">
+      <!-- 1. القسم الاول تقسيم المنتجات الى 4 اقسام مستقله   -->
+      <section class="section-box">
+        <h4 class="section-title">اللابتوبات وأجهزة الكمبيوتر</h4>
+        <!--  حاويه افقية مع مسافه-->
+        <div class="row g-3">
+            <!-- يعرض الشرائح على حسب الشاشات الصغيره او المتوشطه-->
+          <div class="col-6 col-md-3">
+            <div class="product-card">
+              <img src="images/products/laptops/laptop1.jpg" alt="ماك بوك" class="product-img" />
+              <h6 class="product-name">ماك بوك اير M3</h6>
+              <p class="product-price">1300 $</p>
+              
+              <button class="btn-custom btn-details view-details-btn" data-id="p1">عرض التفاصيل</button>
+              <a href="https://wa.me/967774967240?text=طلب%20ماك%20بوك" target="_blank" class="btn-custom btn-order">طلب الآن</a>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="product-card">
+              <img src="images/products/laptops/laptop2.jpg" alt="ديل" class="product-img" />
+              <h6 class="product-name">ديل XPS 15</h6>
+              <p class="product-price">1450 $</p>
+              <button class="btn-custom btn-details view-details-btn" data-id="p2">عرض التفاصيل</button>
+              <a href="https://wa.me/967774967240?text=طلب%20ديل" target="_blank" class="btn-custom btn-order">طلب الآن</a>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="product-card">
+              <img src="images/products/laptops/laptop3.jpg" alt="لينوفو" class="product-img" />
+              <h6 class="product-name">لينوفو Legion 5</h6>
+              <p class="product-price">1200 $</p>
+              <button class="btn-custom btn-details view-details-btn" data-id="p3">عرض التفاصيل</button>
+              <a href="https://wa.me/967774967240?text=طلب%20لينوفو" target="_blank" class="btn-custom btn-order">طلب الآن</a>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="product-card">
+              <img src="images/products/laptops/laptop5.jpg" alt="HP" class="product-img" />
+              <h6 class="product-name">HP Spectre x360</h6>
+              <p class="product-price">1150 $</p>
+              <button class="btn-custom btn-details view-details-btn" data-id="p4">عرض التفاصيل</button>
+              <a href="https://wa.me/967774967240?text=طلب%20HP" target="_blank" class="btn-custom btn-order">طلب الآن</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 2. ملحقات الكمبيوتر -->
+      <section class="section-box">
+        <h4 class="section-title">ملحقات أجهزة الكمبيوتر</h4>
+        <div class="row g-3">
+          <div class="col-6 col-md-3">
+            <div class="product-card">
+              <img src="images/products/accessories/accessory2.jpg" alt="ماوس" class="product-img" />
+              <h6 class="product-name">ماوس Logitech MX</h6>
+              <p class="product-price">100 $</p>
+              <button class="btn-custom btn-details view-details-btn" data-id="p5">عرض التفاصيل</button>
+              <a href="https://wa.me/967774967240?text=طلب%20ماوس" target="_blank" class="btn-custom btn-order">طلب الآن</a>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="product-card">
+              <img src="images/products/accessories/accessory4.jpg" alt="كيبورد" class="product-img" />
+              <h6 class="product-name">كيبورد ميكانيكي</h6>
+              <p class="product-price">60 $</p>
+              <button class="btn-custom btn-details view-details-btn" data-id="p6">عرض التفاصيل</button>
+              <a href="https://wa.me/967774967240?text=طلب%20كيبورد" target="_blank" class="btn-custom btn-order">طلب الآن</a>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="product-card">
+              <img src="images/products/accessories/accessory1.jpg" alt="سماعة" class="product-img" />
+              <h6 class="product-name">سماعة HyperX</h6>
+              <p class="product-price">85 $</p>
+              <button class="btn-custom btn-details view-details-btn" data-id="p7">عرض التفاصيل</button>
+              <a href="https://wa.me/967774967240?text=طلب%20سماعة" target="_blank" class="btn-custom btn-order">طلب الآن</a>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="product-card">
+              <img src="images/products/accessories/desktop5.jpg" alt="شاشة" class="product-img" />
+              <h6 class="product-name">شاشة سامسونج 4K</h6>
+              <p class="product-price">320 $</p>
+              <button class="btn-custom btn-details view-details-btn" data-id="p8">عرض التفاصيل</button>
+              <a href="https://wa.me/967774967240?text=طلب%20شاشة" target="_blank" class="btn-custom btn-order">طلب الآن</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. الهواتف الذكية -->
+      <section class="section-box">
+        <h4 class="section-title">الهواتف الذكية</h4>
+        <div class="row g-3">
+          <div class="col-6 col-md-3">
+            <div class="product-card">
+              <img src="images/products/smartphones/phone1.jpg" alt="آيفون" class="product-img" />
+              <h6 class="product-name">آيفون 15 برومكس</h6>
+              <p class="product-price">1200 $</p>
+              <button class="btn-custom btn-details view-details-btn" data-id="p9">عرض التفاصيل</button>
+              <a href="https://wa.me/967774967240?text=طلب%20آيفون" target="_blank" class="btn-custom btn-order">طلب الآن</a>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="product-card">
+              <img src="images/products/smartphones/phone2.jpg" alt="سامسونج" class="product-img" />
+              <h6 class="product-name">سامسونج S24 ألترا</h6>
+              <p class="product-price">1100 $</p>
+              <button class="btn-custom btn-details view-details-btn" data-id="p10">عرض التفاصيل</button>
+              <a href="https://wa.me/967774967240?text=طلب%20سامسونج" target="_blank" class="btn-custom btn-order">طلب الآن</a>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="product-card">
+              <img src="images/products/smartphones/phone3.jpg" alt="شاومي" class="product-img" />
+              <h6 class="product-name">شاومي 14 ألترا</h6>
+              <p class="product-price">950 $</p>
+              <button class="btn-custom btn-details view-details-btn" data-id="p11">عرض التفاصيل</button>
+              <a href="https://wa.me/967774967240?text=طلب%20شاومي" target="_blank" class="btn-custom btn-order">طلب الآن</a>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="product-card">
+              <img src="images/products/smartphones/phone5.jpg" alt="بكسل" class="product-img" />
+              <h6 class="product-name">جوجل بكسل 8 برو</h6>
+              <p class="product-price">850 $</p>
+              <button class="btn-custom btn-details view-details-btn" data-id="p12">عرض التفاصيل</button>
+              <a href="https://wa.me/967774967240?text=طلب%20بكسل" target="_blank" class="btn-custom btn-order">طلب الآن</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. ملحقات الهواتف الذكية -->
+      <section class="section-box">
+        <h4 class="section-title">ملحقات الهواتف الذكية</h4>
+        <div class="row g-3">
+          <div class="col-6 col-md-3">
+            <div class="product-card">
+              <img src="images/products/accessories/accessory3.jpg" alt="AirPods" class="product-img" />
+              <h6 class="product-name">AirPods Pro 2</h6>
+              <p class="product-price">240 $</p>
+              <button class="btn-custom btn-details view-details-btn" data-id="p13">عرض التفاصيل</button>
+              <a href="https://wa.me/967774967240?text=طلب%20AirPods" target="_blank" class="btn-custom btn-order">طلب الآن</a>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="product-card">
+              <img src="images/products/accessories/Galaxy Buds 2 Pro.png" alt="Galaxy Buds" class="product-img" />
+              <h6 class="product-name">Galaxy Buds 2 Pro</h6>
+              <p class="product-price">160 $</p>
+              <button class="btn-custom btn-details view-details-btn" data-id="p14">عرض التفاصيل</button>
+              <a href="https://wa.me/967774967240?text=طلب%20Galaxy%20Buds" target="_blank" class="btn-custom btn-order">طلب الآن</a>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="product-card">
+              <img src="images/products/accessories/accessory6.jpg" alt="باور بنك" class="product-img" />
+              <h6 class="product-name">باور بنك Anker</h6>
+              <p class="product-price">50 $</p>
+              <button class="btn-custom btn-details view-details-btn" data-id="p15">عرض التفاصيل</button>
+              <a href="https://wa.me/967774967240?text=طلب%20باوربنك" target="_blank" class="btn-custom btn-order">طلب الآن</a>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="product-card">
+              <img src="images/products/accessories/MagSafe.jpeg" alt="MagSafe" class="product-img" />
+              <h6 class="product-name">شاحن MagSafe</h6>
+              <p class="product-price">40 $</p>
+              <button class="btn-custom btn-details view-details-btn" data-id="p16">عرض التفاصيل</button>
+              <a href="https://wa.me/967774967240?text=طلب%20شاحن" target="_blank" class="btn-custom btn-order">طلب الآن</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Modal التفاصيل -->
+    <div class="modal fade" id="productDetailsModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header bg-primary text-white">
+            <h5 class="modal-title fs-6" id="modalProductTitle">تفاصيل المنتج</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <p id="modalProductSpecs" class="small text-secondary mb-0">جاري التحميل...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row gy-4">
+          <!-- 1. نبذة عن المتجر وأيقونات التواصل الملونة -->
+          <div class="col-12 col-md-5 footer-box">
+            <h5 class="footer-title"><i class="fa-solid fa-laptop-code"></i> البدر تيك</h5>
+            <p class="footer-text">وجهتك الأولى للأجهزة الذكية واللابتوبات بأعلى جودة وأفضل الأسعار.</p>
+
+            <!-- أيقونات التواصل الاجتماعي بألوانها الأصلية -->
+            <div class="social-links">
+              <a href="#" class="fb" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" class="tw" title="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#" class="ig" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" class="wa" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+          </div>
+          <!-- 2. روابط سريعة -->
+
+          <div class="col-6 col-md-3 footer-box">
+            <h6 class="footer-subtitle">روابط سريعة</h6>
+            <ul class="footer-list">
+              <li><a href="index.html">الرئيسية</a></li>
+              <li><a href="products.html">المنتجات</a></li>
+              <li><a href="login.html">تسجيل الدخول</a></li>
+              <li><a href="contact.html">تواصل معنا</a></li>
+            </ul>
+          </div>
+
+          <!-- 3. معلومات التواصل -->
+          <div class="col-6 col-md-4 footer-box">
+            <h6 class="footer-subtitle">التواصل</h6>
+            <ul class="footer-contact">
+              <li><i class="fa-solid fa-location-dot"></i> اليمن , صنعاء</li>
+              <li><i class="fa-solid fa-phone"></i> +967 774 608 240</li>
+              <li><i class="fa-solid fa-envelope"></i> info@albadrtech.com</li>
+            </ul>
+          </div>
+        </div>
+        <!-- حقوق النشر -->
+        <div class="footer-bottom">
+          <p>&copy; 2026 متجر البدر تيك - جميع الحقوق محفوظة.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ملفات الجافاسكريبت المحلية بالترتيب الصحيح -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/toastr.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

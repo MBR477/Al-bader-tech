@@ -1,0 +1,46 @@
+/* الحاوية الأساسية: تحديد الحواف والظل وإخفاء العناصر الخارجة */
+#wowslider-container1 {
+  position: relative;
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* قائمة الصور: ترتيب أفقي مع خاصية السحب والانتقال السلس */
+#wowslider-container1 .ws_images ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow-x: auto;
+  scroll-behavior: smooth; /* يمنح حركة انتقال ناعمة بين الصور */
+  scroll-snap-type: x mandatory; /* يثبت الصورة بالكامل في المنتصف بعد الحركة */
+  scrollbar-width: none; /* إخفاء شريط التمرير لمتصفح فايرفوكس */
+}
+
+/* إخفاء شريط التمرير لمتصفحات كروم وسفاري وإيدج */
+#wowslider-container1 .ws_images ul::-webkit-scrollbar {
+  display: none;
+}
+
+/* عنصر الصورة: أخذ العرض الكامل ومحاذاة التثبيت */
+#wowslider-container1 .ws_images li {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+}
+
+/* تنسيق الصورة: الحفاظ على الأبعاد بدون تشويه */
+#wowslider-container1 .ws_images img {
+  display: block;
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+}
+
+/* التجاوب مع شاشات الهواتف والأجهزة اللوحية */
+@media (max-width: 768px) {
+  #wowslider-container1 .ws_images img {
+    height: 320px;
+  }
+}

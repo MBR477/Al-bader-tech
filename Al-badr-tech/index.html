@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>الرئيسية - البدر تك</title>
+
+    <!-- ملفات CSS المحلية -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/toastr.min.css" />
+
+    <!-- تنسيق WowSlider -->
+    <link rel="stylesheet" href="css/wowslider.css" />
+
+    <!-- تنسيق الموقع -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- الناف يعرف المتصفح ان هذا شريط متنقل ويرتب العناصر داخله بشكل تلقائي  -->
+    <!--navbar-expand-md  يجعل القائمة تستجيب لحجم الشاشة-->
+    <header class="navbar navbar-expand-md bg-white border-bottom shadow-sm px-4 sticky-top z-3">
+      <!--حاوية  تضم جميع عناصر الهيدر مع ضبط الحواف والمسافات الجانبية  تلقائي ومتجاوب مع جميع الشاشات-->
+      <div class="container-fluid">
+        <!-- شعار مع رابط يرجع المستخدم للرئيسية -->
+        <a class="navbar-brand ms-3" href="index.html">
+          <img src="images/logo/logo.png" alt="AL-BADR TECH" height="40" />
+        </a>
+        <!-- زر الجوال -->
+        <!--يضهر الزر في الجوال ويخفية في الشاشات الكبيره يعتتمد في المضهر على بوت سي اس اس والفتح والا غلاق على على بوت جي اس-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+          <!--يرسم الخطوط الثلاثة والمسؤول عن فتح واغلاق القائمة في الهواتف -->
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- القائمة -->
+        <!--يخفي القائمة افتراضيا على شاشة الجوال-->
+        <nav class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav gap-2 ms-auto">
+            <!-- الرئيسية -->
+            <li class="nav-item">
+              <a class="nav-link active bg-primary-subtle text-primary rounded-3 px-3 fw-bold" href="index.html">
+                <i class="fa fa-home me-1"></i>
+                الرئيسية
+              </a>
+            </li>
+            <!-- المنتجات والأجهزة -->
+            <li class="nav-item">
+              <a class="nav-link rounded-3 px-3 text-dark fw-medium" href="products.html">
+                <i class="fa fa-laptop me-1"></i>
+                المنتجات والأجهزة
+              </a>
+            </li>
+            <!-- تسجيل الدخول -->
+            <li class="nav-item">
+              <a class="nav-link rounded-3 px-3 text-dark fw-medium" href="login.html">
+                <i class="fa fa-sign-in me-1"></i>
+                تسجيل الدخول
+              </a>
+            </li>
+            <!-- إنشاء حساب -->
+            <li class="nav-item">
+              <a class="nav-link rounded-3 px-3 text-dark fw-medium" href="register.html">
+                <i class="fa fa-user-plus me-1"></i>
+                إنشاء حساب
+              </a>
+            </li>
+            <!-- اتصل بنا -->
+            <li class="nav-item">
+              <a class="nav-link rounded-3 px-3 text-dark fw-medium" href="contact.html"><i class="fa fa-phone me-1"></i> اتصل بنا </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="container my-2">
+      <!-- WowSlider -->
+      <section class="hero-slider mb-5">
+        <div id="wowslider-container1">
+          <div class="ws_images">
+            <ul>
+              <li>
+                <img src="images/slider/slide1.jpg" alt="الصورة الأولى" />
+              </li>
+              <li>
+                <img src="images/slider/slide2.jpg" alt="الصورة الثانية" />
+              </li>
+              <li>
+                <img src="images/slider/slide3.jpg" alt="الصورة الثالثة" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- 
+           الأقسام الرئيسية
+           بدء تقسيم الصفحة باستخدام نظام الشبكة 
+           grid system 
+           ثم استخدمت الوراثة من عنصر الاب لبقية الاقسام -->
+
+      <section class="main-categories my-5">
+        <h2 class="text-center fw-bold mb-4">تصفح حسب القسم</h2>
+
+        <!-- شبكة الأقسام -->
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
+          <!-- القسم الأول -->
+          <div class="col">
+            <a href="products.html?cat=laptops" class="card h-100 text-decoration-none shadow-sm overflow-hidden category-card">
+              <img src="images/products/laptops/laptop4.jpg" alt="اللابتوبات" class="category-img" />
+
+              <div class="card-body text-center p-3">
+                <h3 class="fs-6 fw-bold text-dark mb-1">اللابتوبات</h3>
+
+                <p class="text-muted small m-0">أحدث الأجهزة المحمولة</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- القسم الثاني -->
+          <div class="col">
+            <a href="products.html?cat=pc-acc" class="card h-100 text-decoration-none shadow-sm overflow-hidden category-card">
+              <img src="images/products/accessories/accessory2.jpg" alt="ملحقات الكمبيوتر" class="category-img" />
+
+              <div class="card-body text-center p-3">
+                <h3 class="fs-6 fw-bold text-dark mb-1">ملحقات الكمبيوتر</h3>
+
+                <p class="text-muted small m-0">كيبورد، ماوس، وشاشات</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- القسم الثالث -->
+          <div class="col">
+            <a href="products.html?cat=phones" class="card h-100 text-decoration-none shadow-sm overflow-hidden category-card">
+              <img src="images/products/smartphones/phone3.jpg" alt="الهواتف الذكية" class="category-img" />
+
+              <div class="card-body text-center p-3">
+                <h3 class="fs-6 fw-bold text-dark mb-1">الهواتف الذكية</h3>
+
+                <p class="text-muted small m-0">أحدث الهواتف الذكية</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- القسم الرابع -->
+          <div class="col">
+            <a href="products.html?cat=phone-acc" class="card h-100 text-decoration-none shadow-sm overflow-hidden category-card">
+              <img src="images/products/accessories/accessory3.jpg" alt="ملحقات الهواتف" class="category-img" />
+
+              <div class="card-body text-center p-3">
+                <h3 class="fs-6 fw-bold text-dark mb-1">ملحقات الهواتف</h3>
+
+                <p class="text-muted small m-0">سماعات، شواحن، وكفرات</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- ==========================================
+         Footer
+         ========================================== -->
+    <footer class="site-footer">
+      <div class="container">
+        <!-- تبقي محتوى الفوتر متمركو في الوسط تلقائي وتمنعه من الالتصاق بحواف الشاشة -->
+        <div class="row gy-4">
+          <!-- يضيف مسافه راسية بين الاعمده في حال نزولها فوق بعض على الشاشات الصغيره -->
+          <!-- معلومات المتجر -->
+          <div class="col-12 col-md-5 footer-box">
+            <h5 class="footer-title"><i class="fa-solid fa-laptop-code"></i> البدر تك</h5>
+            <p class="footer-text">وجهتك الأولى للأجهزة الذكية واللابتوبات بأعلى جودة وأفضل الأسعار.</p>
+
+            <!-- مواقع التواصل -->
+            <div class="social-links">
+              <a href="#" class="fb" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+
+              <a href="#" class="tw" title="X (Twitter)">
+                <i class="fa-brands fa-x-twitter"></i>
+              </a>
+
+              <a href="#" class="ig" title="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+
+              <a href="#" class="wa" title="WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- روابط سريعة -->
+          <div class="col-6 col-md-3 footer-box">
+            <h6 class="footer-subtitle">روابط سريعة</h6>
+
+            <ul class="footer-list">
+              <li>
+                <a href="index.html"> الرئيسية </a>
+              </li>
+
+              <li>
+                <a href="products.html"> المنتجات </a>
+              </li>
+
+              <li>
+                <a href="login.html"> تسجيل الدخول </a>
+              </li>
+
+              <li>
+                <a href="contact.html"> تواصل معنا </a>
+              </li>
+            </ul>
+          </div>
+          <!-- معلومات التواصل -->
+          <div class="col-6 col-md-4 footer-box">
+            <h6 class="footer-subtitle">التواصل</h6>
+
+            <ul class="footer-contact">
+              <li>
+                <i class="fa-solid fa-location-dot"></i>
+                اليمن , صنعاء
+              </li>
+
+              <li>
+                <i class="fa-solid fa-phone"></i>
+                +967 774608240
+              </li>
+
+              <li>
+                <i class="fa-solid fa-envelope"></i>
+                albadrtech@gmail.com
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- حقوق النشر -->
+        <div class="footer-bottom">
+          <p>&copy; 2026 متجر البدر تيك - جميع الحقوق محفوظة.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- ==========================================
+         JavaScript
+         ========================================== -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/toastr.min.js"></script>
+    <!-- WowSlider -->
+    <script src="js/wowslider.js"></script>
+
+    <!-- JavaScript الرئيسي -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

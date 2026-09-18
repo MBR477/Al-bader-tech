@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>تواصل معنا - البدر تك</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/toastr.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="navbar navbar-expand-md bg-white border-bottom shadow-sm px-4 sticky-top z-3">
+      <div class="container-fluid">
+        <!-- الشعار -->
+        <a class="navbar-brand ms-3" href="index.html">
+          <img src="images/logo/logo.png" alt="AL-BADR TECH" height="40" />
+        </a>
+
+        <!-- زر الجوال -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- القائمة -->
+        <nav class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav gap-2 ms-auto">
+            <!-- الرئيسية -->
+            <li class="nav-item">
+              <a class="nav-link rounded-3 px-3 text-dark fw-medium" href="index.html">
+                <i class="fa fa-home me-1"></i>
+                الرئيسية
+              </a>
+            </li>
+
+            <!-- المنتجات والأجهزة -->
+            <li class="nav-item">
+              <a class="nav-link rounded-3 px-3 text-dark fw-medium" href="products.html">
+                <i class="fa fa-laptop me-1"></i>
+                المنتجات والأجهزة
+              </a>
+            </li>
+
+            <!-- تسجيل الدخول -->
+            <li class="nav-item">
+              <a class="nav-link rounded-3 px-3 text-dark fw-medium" href="login.html">
+                <i class="fa fa-sign-in me-1"></i>
+                تسجيل الدخول
+              </a>
+            </li>
+
+            <!-- إنشاء حساب -->
+            <li class="nav-item">
+              <a class="nav-link rounded-3 px-3 text-dark fw-medium" href="register.html">
+                <i class="fa fa-user-plus me-1"></i>
+                إنشاء حساب
+              </a>
+            </li>
+
+            <!-- اتصل بنا -->
+            <li class="nav-item">
+              <a class="nav-link active bg-primary-subtle text-primary rounded-3 px-3 fw-bold" href="contact.html"><i class="fa fa-phone me-1"></i> اتصل بنا </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- الحاوية الرئيسية لصفحة التواصل بمسافة تباعد داخلي عمودي بمقدار 5 -->
+    <main class="contact py-5">
+      <!-- حاوية البوتستراب القياسية لتوسيط المحتوى وتحديد العرض الأقصى -->
+      <div class="container">
+        <!-- بطاقة نموذج المراسلة مع توسيط تلقائي أفقي في منتصف الصفحة -->
+        <div class="contact-card mx-auto">
+          <!-- عنوان فرعي بخط عريض ولون داكن مع مسافة سفلية وتوسيط أفقي -->
+          <h3 class="fw-bold text-dark mb-2 text-center">أرسل لنا استفسارك أو طلبك</h3>
+          <!-- نص توضيحي باهت بحجم صغير مع مسافة سفلية وتوسيط أفقي -->
+          <p class="text-muted small mb-4 text-center">املأ النموذج أدناه وسيقوم أحد موظفي المبيعات أو الدعم بالتواصل معك فوراً</p>
+          <form id="contactForm" novalidate>
+            <!-- صف شبكي بتباعد داخلي 3 بين الحقول ومسافة سفلية 3 -->
+            <div class="row g-3 mb-3">
+              <!-- عمود يأخذ نصف العرض في الشاشات المتوسطة والكبيرة -->
+              <div class="col-md-6">
+                <label for="contactName" class="form-label">الاسم بالكامل *</label>
+                <input type="text" class="form-control" id="contactName" placeholder="محمد السعيد" required minlength="2" />
+                <div class="invalid-feedback">يرجى كتابة الاسم بشكل صحيح</div>
+              </div>
+              <!-- عمود يأخذ نصف العرض في الشاشات المتوسطة والكبيرة -->
+              <div class="col-md-6">
+                <label for="contactEmail" class="form-label">البريد الإلكتروني *</label>
+                <input type="email" class="form-control ltr-text" id="contactEmail" placeholder="name@company.com" required />
+                <div class="invalid-feedback">يرجى إدخال بريد إلكتروني صالح</div>
+              </div>
+            </div>
+
+            <!-- صف شبكي بتباعد داخلي 3 بين الحقول ومسافة سفلية 3 -->
+            <div class="row g-3 mb-3">
+              <!-- عمود يأخذ نصف العرض في الشاشات المتوسطة والكبيرة -->
+              <div class="col-md-6">
+                <label for="contactSubject" class="form-label">موضوع الرسالة *</label>
+                <input type="text" class="form-control" id="contactSubject" placeholder="استفسار عن منتجات أو عروض..." required minlength="3" />
+                <div class="invalid-feedback">يرجى تحديد موضوع الرسالة</div>
+              </div>
+              <!-- عمود يأخذ نصف العرض في الشاشات المتوسطة والكبيرة -->
+              <div class="col-md-6">
+                <label for="contactPhone" class="form-label">رقم الهاتف (اختياري)</label>
+                <input type="tel" class="form-control ltr-text" id="contactPhone" placeholder="+967 770 000 000" />
+              </div>
+            </div>
+            <!-- حاوية حقل نص الرسالة مع مسافة تباعد سفلية بمقدار 4 -->
+            <div class="mb-4">
+              <label for="contactMessage" class="form-label">نص الرسالة / تفاصيل الاستفسار *</label>
+              <textarea class="form-control" id="contactMessage" rows="5" placeholder="اكتب تفاصيل استفسارك هنا..." required minlength="10"></textarea>
+              <div class="invalid-feedback">يرجى كتابة رسالة توضيحية لا تقل عن 10 أحرف</div>
+            </div>
+
+            <!-- زر الإرسال باللون الأزرق الأساسي مع حواف داخلية واسعة، خط عريض وحجم خط رقم 6 -->
+            <button type="submit" class="btn btn-primary px-4 py-2 fw-bold fs-6"><i class="fa fa-paper-plane me-1 ms-1"></i>إرسال الرسالة الآن</button>
+          </form>
+        </div>
+        <!-- بطاقة المطور: بطاقة بيضاء بدون حدود خارجية، بظل ناعم، حواف مستديرة كبيرة، مسافة علوية ومسافة داخلية 4 -->
+        <div class="card border-0 shadow-sm rounded-4 p-4 mt-5 bg-white">
+          <!-- صف شبكي بمحاذاة رأسية متوسطة وتباعد مسافة 4 بين الأعمدة -->
+          <div class="row align-items-center g-4">
+            <!-- عمود يأخذ نصف عرض الشاشة الكبيرة col-lg-6 لعرض بيانات المطور -->
+            <div class="col-lg-6">
+              <!-- شارة نصية بخلفية زرقاء ناعمة، نص أزرق أساسي، حواف دائرية بالكامل وخط عريض -->
+              <span class="badge bg-primary-subtle text-primary px-3 py-2 rounded-pill fw-bold mb-2">مطور الواجهات الأمامية</span>
+              <h4 class="fw-bold text-dark mb-2">عن مطور المشروع</h4>
+              <p class="text-muted mb-4">تم تطوير وتصميم هذا المتجر كمتطلب عملي شامل يعمل ويدير بياناته ذاتيا و محليا بالكامل باحدث المعايير .</p>
+
+              <h6 class="fw-bold text-secondary mb-3"><i class="fa fa-code text-primary me-2 ms-1"></i>التقنيات المستخدمة:</h6>
+              <!-- حاوية فليكس مرنة تسمح بالتفاف العناصر مع مسافة تباعد 2 بين الشارات ومسافة سفلية 4 -->
+              <div class="d-flex flex-wrap gap-2 mb-4">
+                <!-- شارة تقنية بخلفية رمادية فاتحة، نص داكن، إطار محيط، تباعد داخلي وحواف مستديرة -->
+                <span class="badge bg-light text-dark border px-3 py-2 rounded-3"><i class="fa-brands fa-html5 text-danger me-1 ms-1"></i>HTML5</span>
+                <!-- شارة تقنية بخلفية رمادية فاتحة، نص داكن، إطار محيط، تباعد داخلي وحواف مستديرة -->
+                <span class="badge bg-light text-dark border px-3 py-2 rounded-3"><i class="fa-brands fa-css3 text-primary me-1 ms-1"></i>CSS3</span>
+                <!-- شارة تقنية بخلفية رمادية فاتحة، نص داكن، إطار محيط، تباعد داخلي وحواف مستديرة -->
+                <span class="badge bg-light text-dark border px-3 py-2 rounded-3">Bootstrap 5</span>
+                <!-- شارة تقنية بخلفية رمادية فاتحة، نص داكن، إطار محيط، تباعد داخلي وحواف مستديرة -->
+                <span class="badge bg-light text-dark border px-3 py-2 rounded-3">JavaScript / jQuery</span>
+                <!-- شارة تقنية بخلفية رمادية فاتحة، نص داكن، إطار محيط، تباعد داخلي وحواف مستديرة -->
+                <span class="badge bg-light text-dark border px-3 py-2 rounded-3"><i class="fa fa-refresh text-success me-1 ms-1"></i>Ajax</span>
+              </div>
+              <!-- زر إطار مفرغ أزرق بحواف مستديرة، تباعد داخلي مريح وخط متوسط العرض -->
+              <a href="certificate/شهادة اتمام كورس html.png" target="_blank" class="btn btn-outline-primary rounded-3 px-3 py-2 fw-medium">
+                <i class="fa fa-external-link me-1 ms-1"></i>عرض الشهادة بالحجم الكامل
+              </a>
+            </div>
+
+            <!-- عمود يأخذ نصف عرض الشاشة الكبيرة col-lg-6 لعرض صورة الشهادة في المنتصف -->
+            <div class="col-lg-6 text-center">
+              <!-- إطار صورة بخلفية رمادية فاتحة، حدود خارجية، ظل ناعم وعرض كامل 100% -->
+              <div class="p-2 border rounded-3 bg-light d-inline-block shadow-sm w-100">
+                <img src="certificate/شهادة اتمام كورس html.png" alt="شهادة إتمام الكورس" class="img-fluid rounded-2" />
+                <div class="mt-2 text-muted small fw-medium"><i class="fa fa-certificate text-warning me-1 ms-1"></i>شهادة إتمام كورس الويب المعتمدة</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- فوتر: تذييل الصفحة بتنسيق موقع مخصص يحتوي أقسام الروابط والبيانات -->
+    <footer class="site-footer">
+      <div class="container">
+        <!-- صف شبكي بتقسيم متجاوب لأقسام الفوتر مع تباعد عمودي 4 بين الصفوف عند الالتفاف -->
+        <div class="row gy-4">
+          <!-- عمود بعرض كامل في الجوال ويأخذ 5 أعمدة في الشاشات المتوسطة وما فوق -->
+          <div class="col-12 col-md-5 footer-box">
+            <h5 class="footer-title"><i class="fa fa-laptop"></i> البدر تيك</h5>
+            <p class="footer-text">وجهتك الأولى للأجهزة الذكية واللابتوبات بأعلى جودة وأفضل الأسعار.</p>
+            <div class="social-links">
+              <a href="#" class="fb" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" class="tw" title="X (Twitter)"> <i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#" class="ig" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" class="wa" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+          </div>
+          <!-- عمود يأخذ نصف العرض في الجوال و3 أعمدة في الشاشات المتوسطة وما فوق -->
+          <div class="col-6 col-md-3 footer-box">
+            <h6 class="footer-subtitle">روابط سريعة</h6>
+            <ul class="footer-list">
+              <li><a href="index.html">الرئيسية</a></li>
+              <li><a href="products.html">المنتجات</a></li>
+              <li><a href="login.html">تسجيل الدخول</a></li>
+              <li><a href="contact.html">تواصل معنا</a></li>
+            </ul>
+          </div>
+          <!-- عمود يأخذ نصف العرض في الجوال و4 أعمدة في الشاشات المتوسطة وما فوق -->
+          <div class="col-6 col-md-4 footer-box">
+            <h6 class="footer-subtitle">التواصل</h6>
+            <ul class="footer-contact">
+              <li><i class="fa fa-map-marker"></i> اليمن , صنعاء</li>
+              <li><i class="fa fa-phone"></i> +967 774 608 240</li>
+              <li><i class="fa fa-envelope"></i> info@albadrtech.com</li>
+            </ul>
+          </div>
+        </div>
+        <!-- شريط الحقوق أسفل الفوتر بتنسيق مخصص -->
+        <div class="footer-bottom">
+          <p>&copy; 2026 متجر البدر تيك - جميع الحقوق محفوظة.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- ملفات الجافاسكريبت المستدعاة لتشغيل وظائف المتصفح، التنبيهات، والتحقق -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/toastr.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

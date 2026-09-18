@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>الرئيسية - البدر تك</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/toastr.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- بداية الهيدر -->
+    <header class="navbar navbar-expand-md bg-white border-bottom shadow-sm px-4 sticky-top z-3">
+      <div class="container-fluid">
+        <!-- الشعار -->
+        <a class="navbar-brand ms-3" href="index.html">
+          <img src="images/logo/logo.png" alt="AL-BADR TECH" height="40" />
+        </a>
+
+        <!-- زر الجوال (Hamburger Menu) -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- شريط الملاحة والقائمة -->
+        <nav class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav gap-2 ms-auto">
+            <!-- الرئيسية -->
+            <li class="nav-item">
+              <a class="nav-link rounded-3 px-3 text-dark fw-medium" href="index.html"> <i class="fa fa-home me-1"></i> الرئيسية </a>
+            </li>
+
+            <!-- المنتجات والأجهزة -->
+            <li class="nav-item">
+              <a class="nav-link rounded-3 px-3 text-dark fw-medium" href="products.html"> <i class="fa fa-laptop me-1"></i> المنتجات والأجهزة </a>
+            </li>
+
+            <!-- تسجيل الدخول -->
+            <li class="nav-item">
+              <a class="nav-link active bg-primary-subtle text-primary rounded-3 px-3 fw-bold" href="login.html"> <i class="fa fa-sign-in me-1"></i> تسجيل الدخول </a>
+            </li>
+
+            <!-- إنشاء حساب -->
+            <li class="nav-item">
+              <a class="nav-link rounded-3 px-3 text-dark fw-medium" href="register.html"> <i class="fa fa-user-plus me-1"></i> إنشاء حساب </a>
+            </li>
+
+            <!-- اتصل بنا -->
+            <li class="nav-item">
+              <a class="nav-link rounded-3 px-3 text-dark fw-medium" href="contact.html"> <i class="fa fa-phone me-1"></i>اتصل بنا</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="login-wrapper">
+      <div class="login-card">
+        <!-- الهيدر والأيقونة -->
+        <div class="header-section text-center mb-4">
+          <h2 class="h4 fw-bold">تسجيل الدخول</h2>
+          <p class="text-muted small">أهلاً بك مجدداً! أدخل بياناتك للوصول</p>
+        </div>
+        <!-- النموذج -->
+        <form id="loginForm" novalidate>
+          <!-- حقل البريد الإلكتروني -->
+          <div class="email-group mb-3">
+            <label for="loginEmail" class="form-label small">البريد الإلكتروني *</label>
+            <input type="email" id="loginEmail" class="form-control" placeholder="example@domain.com" required />
+          </div>
+          <!-- حقل كلمة المرور -->
+          <div class="password-group mb-3">
+            <label for="loginPassword" class="form-label small">كلمة المرور *</label>
+            <input type="password" id="loginPassword" class="form-control" placeholder="••••••••" required />
+          </div>
+          <!-- زر الدخول -->
+          <button type="submit" class="btn btn-primary w-100 mb-3"><i class="fa-solid fa-right-to-bracket"> </i> تسجيل الدخول</button>
+          <!-- رابط إنشاء حساب -->
+          <div class="text-center small">
+            ليس لديك حساب بعد؟
+            <a href="register.html" class="text-decoration-none">إنشاء حساب جديد</a>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row gy-4">
+          <!-- 1. نبذة عن المتجر وأيقونات التواصل الملونة -->
+          <div class="col-12 col-md-5 footer-box">
+            <h5 class="footer-title"><i class="fa-solid fa-laptop-code"></i> البدر تيك</h5>
+            <p class="footer-text">وجهتك الأولى للأجهزة الذكية واللابتوبات بأعلى جودة وأفضل الأسعار.</p>
+
+            <!-- أيقونات التواصل الاجتماعي بألوانها الأصلية -->
+            <div class="social-links">
+              <a href="#" class="fb" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" class="tw" title="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#" class="ig" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" class="wa" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+          </div>
+
+          <!-- 2. روابط سريعة -->
+          <div class="col-6 col-md-3 footer-box">
+            <h6 class="footer-subtitle">روابط سريعة</h6>
+            <ul class="footer-list">
+              <li><a href="index.html">الرئيسية</a></li>
+              <li><a href="products.html">المنتجات</a></li>
+              <li><a href="login.html">تسجيل الدخول</a></li>
+              <li><a href="contact.html">تواصل معنا</a></li>
+            </ul>
+          </div>
+
+          <!-- 3. معلومات التواصل -->
+          <div class="col-6 col-md-4 footer-box">
+            <h6 class="footer-subtitle">التواصل</h6>
+            <ul class="footer-contact">
+              <li><i class="fa-solid fa-location-dot"></i> اليمن , صنعاء</li>
+              <li><i class="fa-solid fa-phone"></i> +967 774 608 240</li>
+              <li><i class="fa-solid fa-envelope"></i> info@albadrtech.com</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- حقوق النشر -->
+        <div class="footer-bottom">
+          <p>&copy; 2026 متجر البدر تيك - جميع الحقوق محفوظة.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- ملفات الجافاسكريبت المحلية بالترتيب الصحيح -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/toastr.min.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
